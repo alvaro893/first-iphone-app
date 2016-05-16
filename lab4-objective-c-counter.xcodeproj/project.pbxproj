@@ -16,6 +16,7 @@
 		036073D41CE9072F00E95255 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036073D21CE9072F00E95255 /* MainStoryboard_iPhone.storyboard */; };
 		036073D71CE9072F00E95255 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036073D51CE9072F00E95255 /* MainStoryboard_iPad.storyboard */; };
 		036073DA1CE9072F00E95255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 036073D91CE9072F00E95255 /* ViewController.m */; };
+		039C2B791CE92B770053D4CD /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C2B781CE92B770053D4CD /* Counter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		036073C01CE9072F00E95255 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		036073C21CE9072F00E95255 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		036073C41CE9072F00E95255 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		036073C81CE9072F00E95255 /* lab4-objective-c-counter-Info.plist */ = {isa = PBXFileReference; path = "lab4-objective-c-counter-Info.plist"; sourceTree = "<group>"; };
+		036073C81CE9072F00E95255 /* lab4-objective-c-counter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lab4-objective-c-counter-Info.plist"; sourceTree = "<group>"; };
 		036073CA1CE9072F00E95255 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		036073CC1CE9072F00E95255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		036073CE1CE9072F00E95255 /* lab4-objective-c-counter-Prefix.pch */ = {isa = PBXFileReference; path = "lab4-objective-c-counter-Prefix.pch"; sourceTree = "<group>"; };
-		036073CF1CE9072F00E95255 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		036073CE1CE9072F00E95255 /* lab4-objective-c-counter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab4-objective-c-counter-Prefix.pch"; sourceTree = "<group>"; };
+		036073CF1CE9072F00E95255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		036073D01CE9072F00E95255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		036073D31CE9072F00E95255 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		036073D61CE9072F00E95255 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		036073D81CE9072F00E95255 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		036073D81CE9072F00E95255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		036073D91CE9072F00E95255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		039C2B771CE92B770053D4CD /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		039C2B781CE92B770053D4CD /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				036073D81CE9072F00E95255 /* ViewController.h */,
 				036073D91CE9072F00E95255 /* ViewController.m */,
 				036073C71CE9072F00E95255 /* Supporting Files */,
+				039C2B771CE92B770053D4CD /* Counter.h */,
+				039C2B781CE92B770053D4CD /* Counter.m */,
 			);
 			path = "lab4-objective-c-counter";
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				036073CD1CE9072F00E95255 /* main.m in Sources */,
 				036073D11CE9072F00E95255 /* AppDelegate.m in Sources */,
 				036073DA1CE9072F00E95255 /* ViewController.m in Sources */,
+				039C2B791CE92B770053D4CD /* Counter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +294,7 @@
 				036073DF1CE9072F00E95255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

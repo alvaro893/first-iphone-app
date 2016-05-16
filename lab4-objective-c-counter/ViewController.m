@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "Counter.h"
+
+@interface ViewController ()
+@property (strong, nonatomic) Counter *counter;
+-(void) updateCount;
+@end
+
 
 @implementation ViewController
+@synthesize numberLabel;
+@synthesize counter;
 
 - (void)didReceiveMemoryWarning
 {
@@ -20,12 +29,15 @@
 
 - (void)viewDidLoad
 {
+    // initialize counter
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	counter = [[Counter alloc] init];
+    [counter reset];
 }
 
 - (void)viewDidUnload
 {
+    [self setNumberLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -60,5 +72,25 @@
         return YES;
     }
 }
+// MARK: actions
+- (IBAction)plusButtonPressed:(id)sender {
+    [counter add];
+    [self updateCount];
+}
 
+- (IBAction)minusButtonPressed:(id)sender {
+    [counter substract];
+    [self updateCount];
+}
+
+- (IBAction)resetButtonPressed:(id)sender {
+    [counter reset];
+    [self updateCount];
+}
+
+// MARK: private functions
+- (void)updateCount{
+    NSString *text = [NSString stringWithFormat:@"%i", counter.count];
+    numberLabel.text = text;
+}
 @end
